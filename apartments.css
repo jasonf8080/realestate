@@ -575,47 +575,22 @@ nav ul li{
 }
 
 
-.consult-flex{
-    max-width: 90%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  margin-top: 50px;
-  
-}
-
-
-
-.consult-pic{
-    width: 100%;
-   height: 390px;
-    margin-right: 12px;
-    min-width: 628px;
-    flex-basis: 50%;
-    flex-grow: 0.5;
-
-}
-
-.consult-pic img{
-    width: 100%;
-    min-height: 100%;
-    max-height: 100%;
-    border-radius: 8px;
-}
-
 
 .consult-info{
-  flex-grow: 0.55;
-  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 50%;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
 
 .ci-card{
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.329);
     border-radius: 10px;
-    margin: 20px 0;
+    margin: 14px 0;
     width: 100%;
     text-transform: uppercase;
     z-index: 4;
@@ -659,10 +634,6 @@ nav ul li{
 .consult .title br{
     display: none;
 }
-
-
-
-
 
 
 
@@ -732,7 +703,7 @@ nav ul li{
 /*Footer*/
 
 .footer{
-    background: white;
+    background: var(--primary-color);
     padding: 50px 0;
 }
 
@@ -752,17 +723,18 @@ nav ul li{
 .c-title{
     text-align: center;
     margin-bottom: 18px;
-    color: black;
+    color: white;
     font-size: 30px;
     text-transform: uppercase;
 }
 
 .contact-card{
-   box-shadow: 0px 0px 6px 0px rgb(0, 0, 0, 0.3);
-    margin: 26px 0;
     display: flex;
     align-items: center;
     border-radius: 8px;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 26px;
 }
 
 .contact-card .icon-c{
@@ -787,7 +759,7 @@ nav ul li{
 }
 
 .contact-card{
-    color: black;
+    color: white;
     cursor: pointer;
     transition: transform 0.5s;
 }
@@ -825,7 +797,7 @@ nav ul li{
 .ql a{
     text-decoration: none;
     text-transform: uppercase;
-    color: black;
+    color: white;
     font-weight: bold;
 }
 
@@ -850,7 +822,7 @@ nav ul li{
 }
 
 .follow-ul i{
-    color: rgb(122, 122, 122);
+    color: rgb(255, 255, 255);
     font-size: 32px;
 }
 
@@ -858,10 +830,6 @@ nav ul li{
     color: var(--primary-color);
 }
 
-.follow-us img{
-    height: 180px;
-    width: 100%;
-}
 
 
 .footnote{
@@ -872,6 +840,7 @@ nav ul li{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 2px solid rgb(219, 108, 108);
 
 }
 
@@ -1092,16 +1061,9 @@ nav ul li{
 
 
    
-    .consult-pic{
-        margin-right: 0px;
-        min-width: 80%;
-        max-width: 80%;
-    }
+ 
 
-    .consult-info{
-        flex-grow: 0.55;
-        flex-basis: 55%;
-      }
+   
     
     
 }
@@ -1226,9 +1188,7 @@ nav ul li{
     display: inline;
 }
 
-.consult-pic{
-    height: 300px;
-}
+
 
 .ci-p{
     font-size: 21px;
@@ -1268,9 +1228,6 @@ nav ul li{
         font-size: 20px;
     }
     
-    .consult-pic{
-       height: 220px;
-    }
 
     .ci-p{
         font-size: 14px;
