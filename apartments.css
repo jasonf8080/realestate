@@ -802,7 +802,7 @@ nav ul li{
 }
 
 .ql a:hover{
-    color: var(--primary-color);
+    color:rgb(233, 233, 233);
 }
 
 
@@ -827,7 +827,7 @@ nav ul li{
 }
 
 .follow-ul i:hover{
-    color: var(--primary-color);
+    color: rgb(233, 233, 233);
 }
 
 
