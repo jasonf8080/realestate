@@ -13,7 +13,10 @@
 }
 
 
-
+a{
+    text-decoration: none;
+    color: black;
+}
 
 nav{
     box-shadow: 0px 3px 3px 0 rgb(0, 0, 0);
@@ -571,71 +574,59 @@ nav ul li{
 
 /*Consult*/
 .consult{
-    margin: 100px 0;
+    margin: 8rem 0;
+}
+.consult-grid{
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 2.4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 364px);
+    column-gap: 30px;
+    row-gap: 40px;
+    justify-content: center;
+    
 }
 
-
-
-.consult-info{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 50%;
-  margin: 0 auto;
-  margin-top: 30px;
-}
-
-
-.ci-card{
-    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.329);
-    border-radius: 10px;
-    margin: 14px 0;
-    width: 100%;
-    text-transform: uppercase;
-    z-index: 4;
-    background: white;
-    color: black;
-    font-weight: bold;
-    font-size: 22px;
+.consult-card{
+    border-radius: 8px;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-
+    width: 364px;
 }
 
-.ci-card i{
-    font-size: 40px;
-    color: white;
-    font-weight: bold;
-
-}
-
-.ci-i{
+.icon-container{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-basis: 15%;
-    padding: 20px 0;
+    padding: 60px 0;
+}
+
+.consult-card i{
+    font-size: 70px;
+    color: white;
     background: var(--primary-color);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    padding: 28px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.3);
 }
 
 .ci-p{
-    flex-basis: 75%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    background: var(--primary-color);
+    padding: 30px 0;
+    border-radius: 8px;
+   
 }
 
-.consult .title br{
-    display: none;
+.consult-card p{
+    font-size: 1.3rem;
+    text-align: center;
+    color: white;
 }
-
-
 
 
 /*cta*/
@@ -1178,15 +1169,13 @@ nav ul li{
     
    }
 
+  
+
    .search-location i{
        font-size: 17px;
    }
 
 
-
-   .consult .title br{
-    display: inline;
-}
 
 
 
@@ -1206,7 +1195,7 @@ nav ul li{
 
 }
 
-@media(max-width: 530px){
+@media(max-width: 590px){
 
     .title{
         font-size: 28px;
@@ -1229,12 +1218,17 @@ nav ul li{
     }
     
 
-    .ci-p{
-        font-size: 14px;
+    .consult-card{
+        width: 270px;
+        margin: 0 auto;
     }
-    
-    .ci-card i{
-        font-size: 26px;
+
+    .consult-card i{
+        font-size: 50px;
+    }
+
+    .icon-container{
+        padding: 40px 0;
     }
 
 
@@ -1243,6 +1237,8 @@ nav ul li{
        text-align: center;
        font-size: 15px;
     }
+    
+    
 
 
 }
