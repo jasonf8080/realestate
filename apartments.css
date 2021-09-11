@@ -116,6 +116,7 @@ nav ul li{
     color: white;
     border-radius: 30px;
     border: 3px solid var(--primary-color);
+    text-shadow: 1px 1px rgb(0, 0, 0);
 }
 
 .btn:hover{
@@ -123,6 +124,7 @@ nav ul li{
     background-color: white;
     color: var(--primary-color);
     transition: 0.3s;
+    text-shadow: none;
 }
 
 .drop-menu{
@@ -398,8 +400,13 @@ nav ul li{
     color: white;
 }
 
+.l-card:hover .l-card-adress p{
+    text-shadow: 1px 1px rgb(0, 0, 0);
+}
+
 .l-card:hover .info > *{
     color: rgb(241, 241, 241);
+    text-shadow: 1px 1px rgb(0, 0, 0);
 }
 
 
@@ -418,16 +425,17 @@ nav ul li{
     border-radius: 30px;
     border: 3px solid var(--primary-color);
     text-transform: uppercase;
+    text-shadow: 1px 1px rgb(0, 0, 0);
 }
 
 
 
 .view-more-btn:hover{
-
         border: 3px solid var(--primary-color);
         background-color: white;
         color: var(--primary-color);
         transition: 0.3s;
+        text-shadow: none;
  
 }
 
@@ -557,6 +565,10 @@ nav ul li{
     color: white;
 }
 
+.mi-option:hover.mi-option h2{
+    text-shadow: 1px 1px rgb(0, 0, 0);
+}
+
 
 
 .mi-option h2{
@@ -612,6 +624,7 @@ nav ul li{
     padding: 28px;
     border-radius: 50%;
     box-shadow: 0 5px 15px rgb(0, 0, 0, 0.3);
+    text-shadow: 1px 1px rgb(0, 0, 0);
 }
 
 .ci-p{
@@ -619,13 +632,13 @@ nav ul li{
     background: var(--primary-color);
     padding: 30px 0;
     border-radius: 8px;
-   
 }
 
 .consult-card p{
     font-size: 1.3rem;
     text-align: center;
     color: white;
+    text-shadow: 1px 1px rgb(0, 0, 0);
 }
 
 
@@ -709,6 +722,9 @@ nav ul li{
  
 }
 
+.footer-grid *{
+    text-shadow: 1px 1px rgb(0, 0, 0);
+}
 
 
 .c-title{
