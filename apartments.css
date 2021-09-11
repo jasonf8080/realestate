@@ -771,6 +771,10 @@ nav ul li{
     transition: transform 0.5s;
 }
 
+.contact-card-info p{
+    color: white;
+}
+
 .contact-card:hover{
    transform: scale(1.05);
 }
@@ -848,6 +852,7 @@ nav ul li{
     justify-content: center;
     align-items: center;
     border-top: 2px solid rgb(219, 108, 108);
+    text-shadow: 1px 1px rgb(0, 0, 0);
 
 }
 
