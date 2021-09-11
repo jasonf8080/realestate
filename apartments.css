@@ -1055,6 +1055,7 @@ nav ul li{
         color: white;
         font-weight: lighter;
         font-size: 18px;
+        text-shadow: 1px 1px rgb(0, 0, 0);
     }
 
     .menu a:hover{
