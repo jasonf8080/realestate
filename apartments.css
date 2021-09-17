@@ -19,7 +19,7 @@ a{
 }
 
 body{
-    background: #faf9ee;
+    background: #fff;
 }
 
 nav{
@@ -109,7 +109,7 @@ nav ul li{
     text-decoration: none;
     background-color: var(--primary-color);
     color: white;
-    border-radius: 30px;
+    border-radius: 8px;
  
 }
 
@@ -118,7 +118,7 @@ nav ul li{
     text-decoration: none;
     background-color: var(--primary-color);
     color: white;
-    border-radius: 30px;
+    border-radius: 8px;
     border: 3px solid var(--primary-color);
     text-shadow: 1px 1px rgb(0, 0, 0);
 }
@@ -280,18 +280,7 @@ nav ul li{
 }
 
 
-.l-card::after{
-    content: '';
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(to right bottom, var(--primary-color),  rgb(228, 108, 108));
-   visibility: hidden;
-   border-bottom-left-radius: 3px;
-   border-bottom-right-radius: 3px;
-}
+
 
 .l-card:hover::after{
     visibility: visible;
@@ -414,6 +403,10 @@ nav ul li{
     text-shadow: 1px 1px rgb(0, 0, 0);
 }
 
+.price-div{
+    display: none;
+}
+
 
 
 .view-more{
@@ -427,7 +420,7 @@ nav ul li{
     text-decoration: none;
     background-color: var(--primary-color);
     color: white;
-    border-radius: 30px;
+    border-radius: 8px;
     border: 3px solid var(--primary-color);
     text-transform: uppercase;
     text-shadow: 1px 1px rgb(0, 0, 0);
@@ -620,7 +613,7 @@ nav ul li{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px 0;
+    padding: 30px 0;
 }
 
 .consult-card i{
@@ -635,16 +628,15 @@ nav ul li{
 
 .ci-p{
     width: 100%;
-    background: var(--primary-color);
-    padding: 30px 0;
+    background: white;
+    padding: 10px 0;
     border-radius: 8px;
 }
 
 .consult-card p{
     font-size: 1.3rem;
     text-align: center;
-    color: white;
-    text-shadow: 1px 1px rgb(0, 0, 0);
+    color: rgb(223, 106, 106);
 }
 
 
@@ -1159,6 +1151,35 @@ nav ul li{
 
     .l-card{
         width: 248px;
+        
+    }
+
+    .l-card-content{
+        padding: 0;
+    }
+
+    .l-card-adress{
+        padding: 20px;
+    }
+
+    .l-card .l-card-info{
+        display: none;
+    }
+
+    .price-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background: var(--primary-color);
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        padding: 10px 0 5px;
+    }
+
+    .price-div h3{
+       color: white;
+       text-shadow: 1px 1px rgb(0, 0, 0);
     }
 
 
