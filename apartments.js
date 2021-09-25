@@ -1,15 +1,27 @@
-
-
 var menuIcon = document.querySelector('.drop-menu');
 var menu = document.querySelector('.menu');
-var singlePropImg = document.querySelector('.main-card-bg');
-var singlePropImgs = document.querySelectorAll('.sp-imgs img');
-var singlePropImgs2 = document.querySelectorAll('.sp-imgs2 img');
-var rightArrow = document.querySelector('.fa-chevron-right');
-var leftArrow = document.querySelector('.fa-chevron-left');
-var frame = document.querySelector('.frame');
-var propDesc = document.querySelector('.prop-desc');
-var headerContent =  document.querySelector('.header-content');
+const houses = document.querySelectorAll('.l-card');
+const housePic = document.querySelector('#house-pic');
+const price = document.querySelector('.price');
+
+const housePictures = [
+
+    {
+        img: 'tour.jpg',
+    }, 
+
+    {
+        img: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/white-kitchen-1-1537194316.jpg',
+    }, 
+
+    {
+        img: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/edc020121toolbox-001-1607447196.jpg',
+    }, 
+
+    {
+        img: 'https://www.ikea.com/images/a-vadheim-upholstered-bed-with-vitkloever-bed-linen-stands-i-18d599765b42ee3396abb67b8a245606.jpg?f=xxxl',
+    },
+];
 
 
 
@@ -26,82 +38,37 @@ function displayMenu(e){
     }
 }
 
-singlePropImgs[0].addEventListener('click', showImg1);
-singlePropImgs[1].addEventListener('click', showImg2);
-singlePropImgs[2].addEventListener('click', showImg3);
-singlePropImgs[3].addEventListener('click', showImg4);
+let currentHouse = 0;
 
-singlePropImgs2[0].addEventListener('click', showImg5);
-singlePropImgs2[1].addEventListener('click', showImg6);
-singlePropImgs2[2].addEventListener('click', showImg7);
-singlePropImgs2[3].addEventListener('click', showImg8);
+
+const communityContainer = document.querySelector('.community-container');
+const community = document.querySelector('.community');
+const communityListItems = document.querySelectorAll('.community-list li');
+const communitySections = document.querySelectorAll('.community-container > *')
 
 
 
 
 
+community.addEventListener('click', function(e){
+    const id = e.target.dataset.id;
+    
+   
+    if(id){
+       communityListItems.forEach(function(listItem){
+           listItem.classList.remove('active');
+           e.target.classList.add('active');
+       })
 
+       communitySections.forEach(function(section){
+           section.classList.remove('active');
 
+       })
 
+       const element = document.getElementById(id);//so think of dataset as input and id is output
+       console.log(element);
+       element.classList.add('active');
+    }
+})
 
-
-
-
-
-
-
-
-
-function showImg1(e){
-    singlePropImg.src = singlePropImgs[0].src;
-    propDesc.textContent = 'Front View';
-}
-
-function showImg2(e){
-    singlePropImg.src = singlePropImgs[1].src;
-    propDesc.textContent = 'Backyard';
-}
-
-function showImg3(e){
-    singlePropImg.src = singlePropImgs[2].src;
-    propDesc.textContent = 'Kitchen';
-}
-
-function showImg4(e){
-    singlePropImg.src = singlePropImgs[3].src;
-    propDesc.textContent = 'Living Room';
-}
-
-function showImg5(e){
-    singlePropImg.src = singlePropImgs2[0].src;
-    propDesc.textContent = 'Master Bedroom';
-}
-
-function showImg6(e){
-    singlePropImg.src = singlePropImgs2[1].src;
-    propDesc.textContent = 'Bathroom';
-}
-
-function showImg7(e){
-    singlePropImg.src = singlePropImgs2[2].src;
-    propDesc.textContent = 'Bedroom';
-}
-
-function showImg8(e){
-    singlePropImg.src = singlePropImgs2[3].src;
-    propDesc.textContent = 'Basement';
-}
-
-
-
-rightArrow.addEventListener('click', scrollRight);
-leftArrow.addEventListener('click', scrollLeft);
-
-function scrollRight(e){
-    frame.style.transform = 'translateX(-100%)';
-}
-
-function scrollLeft(e){
-    frame.style.transform = 'translateX(0%)';
-}
 
