@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="apartments.css">
+    <link rel="stylesheet" href="apartments2.css">
+    <script src="https://kit.fontawesome.com/958ff056cf.js" crossorigin="anonymous"></script>
+    <title>Urban Home Real Estate</title>
+</head>
+<body>
+    <nav class="nav nav2"><!--Navbar-->
+        <img class="logo" src="urbanhome.png">
+
+        <ul class="menu">
+            <li><a href="#">Buying</a></li>
+            <li><a href="#">Renting</a></li>
+            <li><a href="#">Selling</a></li>
+            <li><a href="#">Agents</a></li>
+            <li><a href="#">Advertisement</a></li>
+        </ul>
+
+        <div class="right-menu">
+            <div class="right-menu-item">
+                <p>Hotline</p>
+                <p>555-888-8600</p>
+            </div>
+
+            <a href="#" class="btn">CONTACT</a>
+        </div>
+
+        <div class="drop-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav><!--Navbar END-->
+
+
+    <div class="house-container"><!--Single House Container-->
+        <div class="main-img-container">
+            <img id="house-pic" src="https://static01.nyt.com/images/2020/03/22/realestate/22selling-long-island/oakImage-1583946227866-articleLarge.jpg?quality=75&auto=webp&disable=upscale">
+            
+            <div class="number-info"><!--position: absolute-->
+                <p class="number">1/8</p>
+                <i class="fas fa-camera"></i>
+            </div>
+
+            <div class="heart-container">
+                <i class="fas fa-heart"></i>
+            </div>
+
+        </div>
+
+        <div class="house-info">
+            <div class="for-sale">
+                <p>For Sale</p>
+                <i class="fas fa-check"></i>
+            </div>
+
+            <p class="address">18 Chestnut St, Yorktown Heights, NY</p>
+            <p class="price">$508,000</p>
+
+            <!--<p>3 bed 2 bath 1 basement</p>-->
+            <div class="room-info">
+                <div class="room-item">
+                    <i class="fas fa-bed"></i>
+                    <p><span>2</span>Bed</p>
+                </div>
+
+                <div class="room-item">
+                    <i class="fas fa-shower"></i>
+                    <p><span>3</span>Bathroom</p>
+                </div>
+
+                <div class="room-item">
+                    <i class="fas fa-ruler-combined"></i>
+                    <p><span>1280</span> sq feet</p>
+                </div>
+            </div>
+
+            <div class="purchase-btns">
+                <button class="purchase-btn">Request Tour</button>
+                <button class="purchase-btn">Ask a Question</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--Section:Communty: Location on Map, Property Description, Schools, -->
+    <section class="community">
+        <ul class="community-list">
+            <li class="active" data-id="community">Community</li>
+            <li data-id="prop-desc">Property Description</li>
+            <li data-id="education">Education</li>
+            <li data-id="facts-features">Facts & Features</li>
+        </ul>
+
+        <div class="community-container">
+
+
+        <div class="community-section active" id="community">
+            <div class="community-section-container">
+                <img class="community-section-img" src="https://www.giohomes.com/wp-content/uploads/2015/09/IMG_2589.jpg">
+
+                <div class="community-content"><!--position: absolute-->
+                    <h1>Yorktown Heights, NY</h1>
+                </div>
+            </div>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati praesentium harum blanditiis quos quasi, inventore minima aliquam in reiciendis molestias! Eum fugit, beatae distinctio repellendus est enim! Ex quaerat vero nihil fugiat harum.</p>
+        </div>
+
+        <div class="property-desc" id="prop-desc">
+            <h3>PROPERTY DESCRIPTION FOR 18 Chestnut ST, YORKTOWN HEIGHTS, NY 10510</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat odit possimus sapiente numquam eveniet officiis consequatur aliquid nam, natus hic assumenda ipsum quo accusamus commodi eos corrupti sit officia maiores nisi. Repellendus, cum laborum? Eligendi fugiat et similique ipsum odit quas doloribus laudantium quos, velit beatae unde! Dolores!</p>
+        </div>
+
+        <div class="education" id="education">
+            <h2>EDUCATION FOR 18 Chestnut ST, YORKTOWN HEIGHTS, NY 10510</h2>
+
+            <div class="education-grid"><!--Grid start-->
+
+                <div class="education-item"><!--Single Item-->
+                    <h3 class="school-title">Elementary School</h3>
+
+                    <h4 class="school-name">Yorktown Elementary</h4>
+
+                    <div class="school-location">
+                        <p>133 Yorktown Rd</p>
+                        <p>Yorktown Heights, NY 12940</p>
+                        <p>914-482-9288</p>
+                    </div>
+
+                    <div class="school-info">
+                        <p>Grades: K-5</p>
+                        <p>Enrollment: 500</p>
+                        <p>Students/Teacher: 25</p>
+                    </div>
+                </div>
+
+                <div class="education-item"><!--Single Item-->
+                    <h3 class="school-title">Middle School</h3>
+
+                    <h4 class="school-name">Yorktown Middle School</h4>
+
+                    <div class="school-location">
+                        <p>133 Yorktown Rd</p>
+                        <p>Yorktown Heights, NY 12940</p>
+                        <p>914-482-9288</p>
+                    </div>
+
+                    <div class="school-info">
+                        <p>Grades: K-5</p>
+                        <p>Enrollment: 500</p>
+                        <p>Students/Teacher: 25</p>
+                    </div>
+                </div>
+
+                <div class="education-item"><!--Single Item-->
+                    <h3 class="school-title">High School</h3>
+
+                    <h4 class="school-name">Yorktown High School</h4>
+
+                    <div class="school-location">
+                        <p>133 Yorktown Rd</p>
+                        <p>Yorktown Heights, NY 12940</p>
+                        <p>914-482-9288</p>
+                    </div>
+
+                    <div class="school-info">
+                        <p>Grades: K-5</p>
+                        <p>Enrollment: 500</p>
+                        <p>Students/Teacher: 25</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="facts-features-grid" id="facts-features"><!--Grid start-->
+            <div class="ff-item">
+                <i class="far fa-building"></i>
+                <p>Type: <span>Single Family Residence</span></p>
+            </div>
+
+            <div class="ff-item">
+                <i class="far fa-calendar-alt"></i>
+                <p>Year Built: <span>2005</span></p>
+            </div>
+
+            <div class="ff-item">
+                <i class="fas fa-fire"></i>
+                <p>Heating: <span>Natural Gas, Forced Air</span></p>
+            </div>
+
+            <div class="ff-item">
+                <i class="far fa-snowflake"></i>
+                <p>Cooling: <span>Central Air</span></p>
+            </div>
+
+            <div class="ff-item">
+                <i class="fas fa-parking"></i>
+                <p>Parking: <span>Attached Garage</span></p>
+            </div>
+
+            <div class="ff-item">
+                <i class="fas fa-street-view"></i>
+                <p>Lot: <span>1.02 Acres</span></p>
+            </div>
+        </div>
+
+
+
+        </div>
+
+    </section>
+   
+
+
+
+    <section class="contact"><!--Contact About Property-->
+        
+        <h3>Contact</h3>
+
+        <div class="contact-flex"><!--flex Start-->
+            <div class="contact1">
+                <div class="details phone-details">
+                    <i class="fas fa-mobile-alt"></i>
+                    <p>8O5-888-OOOO</p>
+                </div>
+
+                <div class="details site-details">
+                    <i class="fas fa-search"></i>
+                    <p>urbanhomerealestate.com</p>
+                </div>
+            </div>
+
+            <div class="contact2">
+                <div class="details language-details">
+                    <i class="fas fa-globe-americas"></i>
+                    <p>Language: English</p>
+                </div>
+
+                <div class="details hours-details">
+                    <i class="far fa-clock"></i>
+                    <p>Open: Monday - Friday 9:00AM - 5:00PM</p>
+                </div>
+            </div>
+        </div><!--flex End-->
+
+        <button>Message</button>
+
+
+    </section>
+
+
+
+   
+
+    <section class="similar-properties">
+        <h1 class="title">Similar Properties</h1>
+
+        <div class="local-listings-grid"><!--GRID START-->
+
+            <a href="index2.html" class="l-card l-card1"><!--All links should be to the other html doc (single house html)-->
+                <div class="l-card-img">
+                    <img src="https://static01.nyt.com/images/2020/03/22/realestate/22selling-long-island/oakImage-1583946227866-articleLarge.jpg?quality=75&auto=webp&disable=upscale">
+                    <h3>$508,000</h3>
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <div class="l-card-content">
+
+                    <div class="l-card-adress">
+                        <p>18 Chestnut St, Yorktown Heights, NY, 12483</p>
+                    </div>
+
+
+                    <div class="l-card-info">
+                        <div class="info">
+                            <i class="fas fa-bed"></i>
+                            <p>2 bed</p>
+                        </div>
+
+                        <div class="info">
+                            <i class="fas fa-shower"></i>
+                            <p>3 baths</p>
+                        </div>
+                        
+                        <div class="info">
+                            <i class="fas fa-ruler-combined"></i>
+                            <p>1280 sq ft</p>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+            </a>
+
+            <a href="index2.html" class="l-card l-card1">
+                <div class="l-card-img">
+                    <img src="https://static01.nyt.com/images/2020/10/04/realestate/04selling-LI/oakImage-1600449152054-superJumbo.jpg">
+                    <h3>$575,000</h3>
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <div class="l-card-content">
+
+                    <div class="l-card-adress">
+                        <p>453 Morningside Ave, New Rochelle, NY, 12483</p>
+                    </div>
+
+                    <div class="l-card-info">
+                        <div class="info">
+                            <i class="fas fa-bed"></i>
+                            <p>2 bed</p>
+                        </div>
+
+                        <div class="info">
+                            <i class="fas fa-shower"></i>
+                            <p>3 baths</p>
+                        </div>
+                        
+                        <div class="info">
+                            <i class="fas fa-ruler-combined"></i>
+                            <p>1280 sq ft</p>
+                        </div>
+                    
+            
+                    </div>
+                    
+                </div>
+            </a>
+
+            <a href="index2.html" class="l-card l-card1">
+                <div class="l-card-img">
+                    <img src="https://cdn.vox-cdn.com/thumbor/b3-BDPzXNlX_1e41IyUxLTyh05E=/0x0:4000x2841/1200x800/filters:focal(1680x1101:2320x1741)/cdn.vox-cdn.com/uploads/chorus_image/image/65889351/House_iStock_1222625117.8.jpg">
+                    <h3>$623,000</h3>
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <div class="l-card-content">
+
+                    <div class="l-card-adress">
+                        <p>32 Soundview St, Dobbs Ferry, NY, 12483</p>
+                    </div>
+
+                    <div class="l-card-info">
+                        <div class="info">
+                            <i class="fas fa-bed"></i>
+                            <p>2 bed</p>
+                        </div>
+
+                        <div class="info">
+                            <i class="fas fa-shower"></i>
+                            <p>3 baths</p>
+                        </div>
+                        
+                        <div class="info">
+                            <i class="fas fa-ruler-combined"></i>
+                            <p>1280 sq ft</p>
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+            </a>
+
+            <a href="index2.html" class="l-card l-card1">
+                <div class="l-card-img">
+                    <img src="https://cdn.vox-cdn.com/thumbor/b3-BDPzXNlX_1e41IyUxLTyh05E=/0x0:4000x2841/1200x800/filters:focal(1680x1101:2320x1741)/cdn.vox-cdn.com/uploads/chorus_image/image/65889351/House_iStock_1222625117.8.jpg">
+                    <h3>$623,000</h3>
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <div class="l-card-content">
+
+                    <div class="l-card-adress">
+                        <p>32 Soundview St, Dobbs Ferry, NY, 12483</p>
+                    </div>
+
+                    <div class="l-card-info">
+                        <div class="info">
+                            <i class="fas fa-bed"></i>
+                            <p>2 bed</p>
+                        </div>
+
+                        <div class="info">
+                            <i class="fas fa-shower"></i>
+                            <p>3 baths</p>
+                        </div>
+                        
+                        <div class="info">
+                            <i class="fas fa-ruler-combined"></i>
+                            <p>1280 sq ft</p>
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+            </a>
+
+
+        </div>
+    </section>
+
+
+
+  
+
+
+
+    <!--Open Houses-->
+    <!--Property History-->
+    <!--Neighborhood-->
+    <!--Schools-->
+    <!--Property Value-->
+
+    <section class="footer">
+        <div class="footer-grid">
+    
+    
+            <div class="quick-links">
+                <h2 class="c-title">Quick Links</h2>
+    
+               <ul class="ql">
+                    <li><a href="#">Buying</a></li>
+                    <li><a href="#">Renting</a></li>
+                    <li><a href="#">Selling</a></li>
+                    <li><a href="#">Agents</a></li>
+                    <li><a href="#">Advertisement</a></li>
+               </ul>
+            </div>
+    
+    
+            <div class="contact-us">
+                <h2 class="c-title">Contact Us</h2>
+    
+                <div class="contact-info">
+    
+                    <div class="contact-card">
+                       <div class="icon-c"><i class="far fa-building"></i></div> 
+    
+                        <div class="contact-card-info">
+                            <h4>Location</h4>
+                            <p>8290 Main Street, New York, NY</p>
+                        </div>
+                    </div>
+    
+                    <div class="contact-card">
+                        <div class="icon-c"><i class="fas fa-phone-alt"></i></div> 
+                       
+                        <div class="contact-card-info">
+                            <h4>Call</h4>
+                            <p>5O5-555-OOOO</p>
+                        </div>
+                    </div>
+    
+                    <div class="contact-card">
+                        <div class="icon-c"> <i class="far fa-envelope"></i></div> 
+                        <div class="contact-card-info">
+                            <h4>Email</h4>
+                            <p>urbanhomerealestate@gmail.com</p>
+                        </div>
+                    </div>
+    
+    
+                </div>
+            </div>
+    
+    
+            <div class="follow-us">
+                <h2 class="c-title">Follow</h2>
+    
+                <div class="follow-ul">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </div>
+    
+                
+              
+            </div>
+    
+    
+    </section>
+
+    <section class="footnote">
+        <p>Urban Home Real Estate</p>
+    </section>
+
+    <script src="apartments.js"></script>
+</body>
+</html>
