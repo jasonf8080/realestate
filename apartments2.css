@@ -311,7 +311,7 @@ body{
   }
 
 
-  .property-desc h3{
+  .property-desc h2{
       max-width: 85%;
       margin: 0 auto;
       text-align: center;
@@ -329,6 +329,8 @@ body{
     text-align: center;
     margin-top: 8px;
     color: rgb(69, 83, 107);
+    text-transform: uppercase;
+    line-height: 25px;
 }
 
 
@@ -582,9 +584,7 @@ body{
         font-size: 2rem;
     }
 
-    .community ul{
-        
-    }
+    
 
     .community ul li{
         font-size: 0.7rem;
@@ -623,5 +623,28 @@ body{
         font-size: 1.3rem;
     }
 
+    .contact, .community{
+        max-width: 85%;
+    }
+
+    .community-section p,  .property-desc p{
+        font-size: 0.8rem;
+        max-width: 90%;
+    }
+
+    .property-desc h2, .education h2{
+        font-size: 0.9rem;
+    }
+
+    .ff-item{
+        max-width: 70%;
+        min-width: 70%;
+        margin: 0 auto;
+    
+    }
+
+    .ff-item p{
+        font-size: 0.75rem;
+    }
    
 }
