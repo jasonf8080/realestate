@@ -11,175 +11,177 @@ li{
 body{
     background: white;
 }
+
+section{
+    margin: 5rem 0;
+}
 .nav2{
     box-shadow: 0px 3px 3px 0 rgba(0, 0, 0, 0.3);
 }
 
-.house-container{
-    max-width: 80%;
-    border-radius: 14px;
+
+
+/*house view*/
+
+.house-view-section{
+    margin: 2.5rem 0 5rem;
+    font-size: 12px;
+}
+
+.house-view-grid{
+    max-width: 90%;
     margin: 0 auto;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
-    z-index: 2;
-    background: rgb(255, 255, 255);
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 2fr 1fr;
+    border-radius: 6px;
 }
 
-/*IMG Section*/
-
-.main-img-container{
-    height: 570px;
-    position: relative;
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
-}
-
-.main-img-container img{
+.house-view-grid img{
     max-width: 100%;
     min-width: 100%;
-    height: 100%;
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    max-height: 565px;
+
+  
 }
 
+.house-img-container{
+    position: relative;
+}
 
-.number-info{
+.house-img-container .fa-chevron-left{
     position: absolute;
-    bottom: 20px;
-    left: 50px;
-    background: rgb(255, 120, 120);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 24px;
-    border-radius: 6px;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
-}
-
-.number-info *{
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    padding: 0;
+    background: transparent;
     text-shadow: 1px 1px rgb(0, 0, 0);
-}
-.number{
-    margin-right: 5px;
+    font-size: 2.5em;
+
 }
 
-.number-info *{
-    color: white;
-    font-size: 1.3rem;
-}
-
-.heart-container{
-    background: white;
+.house-img-container .fa-chevron-right{
     position: absolute;
-    bottom: 20px;
-    right: 45px;
-    border-radius: 50%;
-}
-
-.heart-container .fas.fa-heart{
-    padding: 14px;
-    font-size: 1.8rem;
-    visibility: visible;
-    color: rgb(224, 161, 161);
-    cursor: pointer;
-}
-
-.heart-container:hover .fas.fa-heart{
-    color: rgb(250, 66, 66);
-}
-
-
-
-/*Info Section*/
-.house-info{
-    padding: 40px 50px;
-}
-
-.for-sale{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgb(44, 143, 44);
-    max-width: 100px;
-    margin: 10px 0;
-    border-radius: 6px;
-    padding: 5px;
-}
-
-.address{
-    font-size: 1.4rem;
-}
-
-.price{
-    font-size: 2.4rem;
-    font-weight: bold;
-}
-
-.for-sale *{
-    color: white;
-}
-
-.for-sale p{
-    margin-right: 5px;
-}
-
-.room-info{
-    display: flex;
-    align-items: center;
-    width: 70%;
-    margin-top: 20px;
-}
-
-.room-item{
-    flex-basis: 33%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.room-item i{
-    font-size: 1.6rem;
-}
-
-.room-item p{
-    font-size: 1.1rem;
-    margin-left: 4px;
-}
-
-
-.room-item span{
-    margin: 0 4px;
-}
-
-.purchase-btns{
-    margin-top: 30px;
-}
-
-.purchase-btn{
-    background: var(--primary-color);
-    padding: 8px 16px;
-    color: white;
-    font-size: 1.1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    border: 2px solid var(--primary-color);
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    padding: 0;
+    background: transparent;
     text-shadow: 1px 1px rgb(0, 0, 0);
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    font-size: 2.5em;
+
+    
+}
+
+
+.schedule-a-tour{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 6px;
+    
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+   
+
+}
+
+.schedule-a-tour h2{
+    background: rgba(255, 120, 120, 0.952);
+    color: white;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
     text-transform: uppercase;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.384);
+}
+
+
+.tour-form{
+    width: 80%;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 80%;
+    
+}
+
+.tour-form input{
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    padding: 5px 10px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    border: none;
+    font-size: 1em;
+}
+
+.tour-form h4{
+    margin-bottom: 5px;
+}
+
+.tour-types{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 14px;
+    max-width: 100%;
+    color: rgb(69, 83, 107);
 
 }
 
-.purchase-btn:hover{
-  background: white;
-  color: var(--primary-color);
-  text-shadow: none;
-
+.tour-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.purchase-btn:nth-child(2){
-    margin-left: 6px;
+.tour-type i{
+    margin-right: 10px;
+    border-radius: 50%;
+    color: rgb(230, 230, 230);
 }
+
+.tour-type .option-active{
+    color: rgb(255, 120, 120);
+}
+
+.date-time{
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.date input, .time input{
+    width: 95%;
+}
+
+.name input, .phone input, .email input {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.form-btn{
+    text-transform: uppercase;
+    border: 1px solid rgb(255, 120, 120);
+    background: rgb(255, 120, 120);
+    color: white;
+    font-size: 1.1em;
+    padding: 10px 0;
+    border-radius: 6px;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    box-shadow: 0px 0px 3px 0 rgba(0, 0, 0, 0.384);
+}
+
+
+
 
 /*contact*/
 
@@ -246,7 +248,7 @@ body{
   /*Community*/
 
   .community{
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.308);
+    
     padding: 50px 30px;
     max-width: 80%;
     margin: 0 auto;
@@ -592,10 +594,47 @@ body{
         
     }
 
+    .house-view-section{
+        font-size: 8px;
+    }
+
     
 }
 
 @media(max-width: 768px){
+
+    .house-view-section{
+        font-size: 12px;
+    }
+
+    .house-view-grid{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        max-width: 80%;
+        box-shadow: none;
+    }
+
+    .house-view-grid img, .schedule-a-tour{
+        border-radius: 6px;
+    }
+
+    .schedule-a-tour{
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    .tour-form{
+        margin: 30px 0;
+
+    }
+
+    .tour-types{
+        margin-bottom: 20px;
+    }
+
+    .email{
+        margin-bottom: 20px;
+    }
+    
     .community-content h1{
         font-size: 1.6rem;
     }

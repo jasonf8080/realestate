@@ -72,3 +72,34 @@ community.addEventListener('click', function(e){
 })
 
 
+
+const rightArrow = document.querySelector('.fa-chevron-right');
+const imgArray = ['https://static01.nyt.com/images/2020/10/04/realestate/04selling-LI/oakImage-1600449152054-superJumbo.jpg', 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/edc-kim-alexandriuk-house-livingroom-1592863855.jpg', 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/white-kitchen-1-1537194316.jpg', 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/edc020121toolbox-001-1607447196.jpg'];
+console.log(imgArray);
+
+const houseImg = document.querySelector('.house-img-container img');
+let currentImg = 0;
+
+window.addEventListener('DOMContentLoaded', function(){
+    setupImg(currentImg);
+})
+
+
+function setupImg(currentImg){
+    houseImg.src = imgArray[currentImg];
+}
+
+
+
+rightArrow.addEventListener('click', function(e){
+  
+        currentImg++;
+
+        if(currentImg > imgArray.length -1){
+            currentImg = 0;
+        }
+
+        setupImg(currentImg)
+       
+})
+
