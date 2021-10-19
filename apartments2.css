@@ -83,6 +83,7 @@ body{
     border-radius: 6px;
     min-width: 1fr;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+    max-width: 1fr;
 }
 
 .schedule-a-tour h2{
@@ -229,6 +230,7 @@ body{
     border-radius: 6px;
     padding: 10%;
     min-width: 1fr;
+    max-width: 1fr;
 }
 
 .contact h3{
@@ -668,6 +670,11 @@ body{
 
     .schedule-a-tour{
         box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+        max-width: 80%;
+        min-width: 80%;
+        margin: 0 auto;
+        margin-top: 1.8em;
+        font-size: 12px;
     }
 
     .tour-form{
@@ -715,15 +722,17 @@ body{
         font-size: 12px;
     }
 
+    .schedule-a-tour{
+        font-size: 10px;
+    }
+
 
 
     .community-content h1{
         font-size: 1.3rem;
     }
 
-    .contact, .community{
-        max-width: 85%;
-    }
+   
 
     .community-section p,  .property-desc p{
         font-size: 0.8rem;
