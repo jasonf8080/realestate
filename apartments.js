@@ -74,6 +74,7 @@ community.addEventListener('click', function(e){
 
 
 const rightArrow = document.querySelector('.fa-chevron-right');
+const leftArrow = document.querySelector('.fa-chevron-left');
 const imgArray = ['https://static01.nyt.com/images/2020/10/04/realestate/04selling-LI/oakImage-1600449152054-superJumbo.jpg', 'https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', 'https://images.pexels.com/photos/4682110/pexels-photo-4682110.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', 'https://images.pexels.com/photos/2631746/pexels-photo-2631746.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'];
 console.log(imgArray);
 
@@ -101,5 +102,17 @@ rightArrow.addEventListener('click', function(e){
 
         setupImg(currentImg)
        
+})
+
+leftArrow.addEventListener('click', function(e){
+  
+    currentImg--;
+
+    if(currentImg < 0){
+        currentImg = imgArray.length -1;
+    }
+
+    setupImg(currentImg)
+   
 })
 
