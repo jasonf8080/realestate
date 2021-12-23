@@ -1,3 +1,54 @@
+
+const singleHouses = document.querySelectorAll('.clickable-card');
+const houseImgContainer = document.querySelector('.house-img-container');
+const houseAddressContainer = document.querySelector('.house-address');
+
+
+singleHouses.forEach(function(house){
+    house.addEventListener('click', function(e){
+        window.location.href = "index2.html";
+        singleHouseImg = e.target.parentElement.children[0].children[0].src;
+        singleHouseAddress = e.target.parentElement.children[1].children[0].children[0].textContent;
+
+        houseImgContainer.innerHTML = `<img src="${singleHouseImg}">
+        <i class="fas fa-chevron-left"></i>
+        <i class="fas fa-chevron-right"></i>`;
+
+        houseAddressContainer.innerHTML = `<h2>${singleHouseAddress}</h2>
+        <div class="address-info">
+            <div class="house-info">
+                <i class="fas fa-bed"></i>
+                <p>2 bed</p>
+            </div>
+
+            <div class="house-info">
+                <i class="fas fa-shower"></i>
+                <p>3 baths</p>
+            </div>
+            
+            <div class="house-info">
+                <i class="fas fa-ruler-combined"></i>
+                <p>1280 sq ft</p>
+            </div>
+        </div>
+        <h4 class="house-price">Price:<span>$508,000</span></h4>`
+    })
+})
+
+
+window.addEventListener('scroll', function(){
+    
+    const nav =  document.querySelector('.nav');
+    const navHeight = nav.getBoundingClientRect().height;
+    
+    if(pageYOffset > navHeight){
+        nav.classList.add('nav-fixed');
+    } else {
+        nav.classList.remove('nav-fixed');
+    }
+
+})
+
 var menuIcon = document.querySelector('.drop-menu');
 var menu = document.querySelector('.menu');
 const houses = document.querySelectorAll('.l-card');
@@ -41,7 +92,7 @@ function displayMenu(e){
 let currentHouse = 0;
 
 
-const communityContainer = document.querySelector('.community-container');
+/*const communityContainer = document.querySelector('.community-container');
 const community = document.querySelector('.community');
 const communityListItems = document.querySelectorAll('.community-list li');
 const communitySections = document.querySelectorAll('.community-container > *')
@@ -69,14 +120,14 @@ community.addEventListener('click', function(e){
        console.log(element);
        element.classList.add('active');
     }
-})
+})*/
 
 
 
-const rightArrow = document.querySelector('.fa-chevron-right');
+/*const rightArrow = document.querySelector('.fa-chevron-right');
 const leftArrow = document.querySelector('.fa-chevron-left');
 const imgArray = ['https://static01.nyt.com/images/2020/10/04/realestate/04selling-LI/oakImage-1600449152054-superJumbo.jpg', 'https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', 'https://images.pexels.com/photos/4682110/pexels-photo-4682110.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', 'https://images.pexels.com/photos/2631746/pexels-photo-2631746.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'];
-console.log(imgArray);
+
 
 const houseImg = document.querySelector('.house-img-container img');
 let currentImg = 0;
@@ -114,5 +165,35 @@ leftArrow.addEventListener('click', function(e){
 
     setupImg(currentImg)
    
-})
+})*/
 
+
+const searchFilter = document.querySelector('#search-filter');
+
+searchFilter.addEventListener('keyup', function(){
+    const searchFilterInput = searchFilter.value.toUpperCase();
+    const towns = document.querySelectorAll('.towns-list li');
+   
+   
+   
+    for(let i = 0; i < towns.length; i++){
+       
+        let eachTown = towns[i].children[0].textContent;
+        //console.log(eachTown);
+       
+        if(eachTown.toUpperCase().indexOf(searchFilterInput) > -1){
+            towns[i].style.display = 'block';
+        } else {
+            towns[i].style.display = 'none';
+        }
+    }
+
+    if(searchFilterInput === ''){
+        towns.forEach(function(town){
+            town.style.display = 'none';
+        })
+    }
+
+
+
+})
