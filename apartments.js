@@ -173,6 +173,7 @@ const searchFilter = document.querySelector('#search-filter');
 searchFilter.addEventListener('keyup', function(){
     const searchFilterInput = searchFilter.value.toUpperCase();
     const towns = document.querySelectorAll('.towns-list li');
+    
    
    
    
@@ -183,11 +184,15 @@ searchFilter.addEventListener('keyup', function(){
        
         if(eachTown.toUpperCase().indexOf(searchFilterInput) > -1){
             towns[i].style.display = 'block';
+            console.log(eachTown.toUpperCase().indexOf(searchFilterInput));//if there is a match.. what index it occurs at
+
         } else {
             towns[i].style.display = 'none';
         }
     }
 
+
+    //make sure no results show if nothing is typed in
     if(searchFilterInput === ''){
         towns.forEach(function(town){
             town.style.display = 'none';
@@ -195,5 +200,16 @@ searchFilter.addEventListener('keyup', function(){
     }
 
 
+    const townLinks = document.querySelectorAll('.towns-list li a');
+    townLinks.forEach(function(link){
+        link.addEventListener('click', function(){
+            const selectedTown = link.textContent;
+            localStorage.setItem('selectedTown', selectedTown);
+
+            
+        })
+    })
 
 })
+
+

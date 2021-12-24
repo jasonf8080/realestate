@@ -1,0 +1,32 @@
+
+
+
+/* ABout page*/
+
+.about-header{
+    height: 70vh;
+    position: relative;
+    background: url('https://static01.nyt.com/images/2015/10/11/realestate/11LIVING-ARDSLEY-slide-GFVJ/11LIVING-ARDSLEY-slide-GFVJ-jumbo.jpg') no-repeat center/cover;
+}
+
+.about-header::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.35);
+}
+
+.location{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 99;
+    font-size: 4em;
+    text-transform: uppercase;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+}
