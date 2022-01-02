@@ -8,7 +8,7 @@ const houses = [
 
     {
         img: 'images/house2.png',
-        address: '453 Morningside Ave, New Rochelle, NY, 1248',
+        address: '453 Morningside Ave, New Rochelle, NY, 12483',
         price: '$508,000',
     },
 
