@@ -1,39 +1,185 @@
+//setup local listings innerHTML using js
+const houses = [
+    {
+        img: 'images/house1.png',
+        address: '18 Chestnut St, Yorktown Heights, NY, 12483',
+        price: '$508,000',
+    },
 
-const singleHouses = document.querySelectorAll('.clickable-card');
-const houseImgContainer = document.querySelector('.house-img-container');
-const houseAddressContainer = document.querySelector('.house-address');
+    {
+        img: 'images/house2.png',
+        address: '453 Morningside Ave, New Rochelle, NY, 1248',
+        price: '$508,000',
+    },
 
+    {
+        img: 'images/house3.png',
+        address: '32 Soundview St, Dobbs Ferry, NY, 12483',
+        price: '$508,000',
+    },
 
-singleHouses.forEach(function(house){
-    house.addEventListener('click', function(e){
-        window.location.href = "index2.html";
-        singleHouseImg = e.target.parentElement.children[0].children[0].src;
-        singleHouseAddress = e.target.parentElement.children[1].children[0].children[0].textContent;
+    {
+        img: 'images/house4.png',
+        address: '672 Clinton St, Mt. Kisco, NY, 12483',
+        price: '$508,000',
+    },
 
-        houseImgContainer.innerHTML = `<img src="${singleHouseImg}">
-        <i class="fas fa-chevron-left"></i>
-        <i class="fas fa-chevron-right"></i>`;
+    {
+        img: 'images/house5.png',
+        address: '843 Clearview St, Yonkers, NY, 12483',
+        price: '$508,000',
+    },
 
-        houseAddressContainer.innerHTML = `<h2>${singleHouseAddress}</h2>
-        <div class="address-info">
-            <div class="house-info">
-                <i class="fas fa-bed"></i>
-                <p>2 bed</p>
-            </div>
+    {
+        img: 'images/house6.png',
+        address: '57 Jackson St, Elmsford, NY, 12483',
+        price: '$508,000',
+    },
 
-            <div class="house-info">
-                <i class="fas fa-shower"></i>
-                <p>3 baths</p>
-            </div>
-            
-            <div class="house-info">
-                <i class="fas fa-ruler-combined"></i>
-                <p>1280 sq ft</p>
-            </div>
+    {
+        img: 'images/house7.png',
+        address: '981 Maple Ave, Hawthorne, NY, 12483',
+        price: '$508,000',
+    },
+
+    {
+        img: 'images/house8.png',
+        address: '47 Sterling St, Somers, NY 12483',
+        price: '$508,000',
+    },
+
+    {
+        img: 'images/house9.png',
+        address: '64 Madison Rd, Peekskill, NY, 12093',
+        price: '$508,000',
+    },
+
+    {
+        img: 'images/house10.png',
+        address: '843 Columbus Ave, Tarrytown, NY, 12483',
+        price: '$508,000',
+    },
+
+    {
+        img: 'images/house11.png',
+        address: '12 Lincoln St, Briarcliff, NY, 12483',
+        price: '$508,000',
+    },
+
+    {
+        img: 'images/house12.png',
+        address: '129 Ardsley Rd, Ardsley, NY, 12483',
+        price: '$508,000',
+    },
+]
+
+const localListingsGrid = document.querySelector('.local-listings-grid');
+
+let housesHTML = houses.map(function(house){
+    return `    <a href="index4.html" class="l-card">
+    <div class="l-card-img">
+        <img src="${house.img}">
+        <h3>${house.price}</h3>
+        <i class="fas fa-heart"></i>
+    </div>
+
+    <div class="l-card-content">
+
+        <div class="l-card-adress">
+            <p>${house.address}</p>
         </div>
-        <h4 class="house-price">Price:<span>$508,000</span></h4>`
+
+
+
+    <div class="l-card-info">
+        <div class="info">
+            <i class="fas fa-bed"></i>
+            <p>2 bed</p>
+        </div>
+
+        <div class="info">
+            <i class="fas fa-shower"></i>
+            <p>3 baths</p>
+        </div>
+        
+        <div class="info"> 
+            <i class="fas fa-ruler-combined"></i>
+            <p>1280 sq ft</p>
+        </div>
+    </div>
+
+    
+    
+</div>
+
+</a>`;
+
+    
+});
+
+
+const housesContent = housesHTML.join("");
+localListingsGrid.innerHTML = housesContent;
+
+
+
+//lazy load of houseCards
+const houseCards = document.querySelectorAll('.l-card');
+console.log(houseCards);
+
+let options = {
+    threshold: 0.4,
+};
+
+let houseCardObserver = new IntersectionObserver(function(entries, houseCardObserver){
+    entries.forEach(function(entry){
+        if(entry.isIntersecting){
+            entry.target.style.opacity = '1';
+        } else {
+            entry.target.style.opacity = '0';
+        }
     })
-})
+}, options)
+
+
+houseCards.forEach(function(houseCard){
+    houseCardObserver.observe(houseCard);
+});
+
+
+//select a house
+houseCards.forEach(function(houseCard){
+    houseCard.addEventListener('click', function(){
+        //img
+        //address
+        //price
+        const houseImg = houseCard.children[0].children[0].src;
+        const houseAddress = houseCard.children[1].children[0].children[0].textContent;
+        const housePrice = houseCard.children[0].children[1].textContent;
+    
+        localStorage.setItem('houseImg', houseImg);
+        localStorage.setItem('houseAddress', houseAddress);
+        localStorage.setItem('housePrice', housePrice);
+
+        let similarHomesArray = [];
+
+        for(let i = 0; i < 4; i++){
+            const randomNumber = Math.floor(Math.random() * houseCards.length);
+            console.log(randomNumber);//generate random number
+
+            similarHomesArray.push(randomNumber);//add random numbers to array
+            
+        }
+
+    
+    
+        localStorage.setItem("similarHomes",  JSON.stringify(similarHomesArray));//store array into localStorage as a string
+        
+
+        
+    })
+});
+
 
 
 window.addEventListener('scroll', function(){
@@ -49,31 +195,8 @@ window.addEventListener('scroll', function(){
 
 })
 
-var menuIcon = document.querySelector('.drop-menu');
-var menu = document.querySelector('.menu');
-const houses = document.querySelectorAll('.l-card');
-const housePic = document.querySelector('#house-pic');
-const price = document.querySelector('.price');
 
-const housePictures = [
-
-    {
-        img: 'tour.jpg',
-    }, 
-
-    {
-        img: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/white-kitchen-1-1537194316.jpg',
-    }, 
-
-    {
-        img: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/edc020121toolbox-001-1607447196.jpg',
-    }, 
-
-    {
-        img: 'https://www.ikea.com/images/a-vadheim-upholstered-bed-with-vitkloever-bed-linen-stands-i-18d599765b42ee3396abb67b8a245606.jpg?f=xxxl',
-    },
-];
-
+const menuIcon = document.querySelector('.drop-menu');
 
 
 menuIcon.addEventListener('click', displayMenu);
@@ -92,80 +215,6 @@ function displayMenu(e){
 let currentHouse = 0;
 
 
-/*const communityContainer = document.querySelector('.community-container');
-const community = document.querySelector('.community');
-const communityListItems = document.querySelectorAll('.community-list li');
-const communitySections = document.querySelectorAll('.community-container > *')
-
-
-
-
-
-community.addEventListener('click', function(e){
-    const id = e.target.dataset.id;
-    
-   
-    if(id){
-       communityListItems.forEach(function(listItem){
-           listItem.classList.remove('active');
-           e.target.classList.add('active');
-       })
-
-       communitySections.forEach(function(section){
-           section.classList.remove('active');
-
-       })
-
-       const element = document.getElementById(id);//so think of dataset as input and id is output
-       console.log(element);
-       element.classList.add('active');
-    }
-})*/
-
-
-
-/*const rightArrow = document.querySelector('.fa-chevron-right');
-const leftArrow = document.querySelector('.fa-chevron-left');
-const imgArray = ['https://static01.nyt.com/images/2020/10/04/realestate/04selling-LI/oakImage-1600449152054-superJumbo.jpg', 'https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', 'https://images.pexels.com/photos/4682110/pexels-photo-4682110.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', 'https://images.pexels.com/photos/2631746/pexels-photo-2631746.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'];
-
-
-const houseImg = document.querySelector('.house-img-container img');
-let currentImg = 0;
-
-window.addEventListener('DOMContentLoaded', function(){
-    setupImg(currentImg);
-})
-
-
-function setupImg(currentImg){
-    houseImg.src = imgArray[currentImg];
-}
-
-
-
-rightArrow.addEventListener('click', function(e){
-  
-        currentImg++;
-
-        if(currentImg > imgArray.length -1){
-            currentImg = 0;
-        }
-
-        setupImg(currentImg)
-       
-})
-
-leftArrow.addEventListener('click', function(e){
-  
-    currentImg--;
-
-    if(currentImg < 0){
-        currentImg = imgArray.length -1;
-    }
-
-    setupImg(currentImg)
-   
-})*/
 
 
 const searchFilter = document.querySelector('#search-filter');

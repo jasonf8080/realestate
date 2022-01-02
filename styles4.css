@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-size: 1rem;
+  }
+  li{
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+ 
+  
+  h1{
+    font-size: 3em;
+  }
+  h2{
+    font-size: 2em;
+  }
+  h3{
+    font-size: 1.25em;
+  }
+  h4{
+    font-size: 0.875em;
+  }
+  
+  
+  
+  
+  section{
+    margin: 5rem 0;
+  }
+
+
+  /*selected house section*/
+  
+  .selected-house-section{
+      max-width: 80%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      margin-top: 2.5rem;
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+   
+  }
+
+  .selected-house{
+      max-width: 100%;
+      min-width: 100%;
+      height: auto;
+  }
+
+  .l-card{
+      opacity: 1;
+  }
+
+
+  @media(max-width: 768px){
+    .selected-house-section{
+        max-width: 100%;
+        margin-top: 0rem;
+        grid-template-columns: 1fr;
+    }
+  }

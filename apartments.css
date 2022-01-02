@@ -262,13 +262,13 @@ nav ul li{
 
 
 .local-listings-grid{
-    width: 90%;
+    max-width: 85%;
     margin: 0 auto;
     margin-top: 40px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 273px);
-    column-gap: 20px;
-    row-gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.25em;
+    row-gap: 2em;
     justify-content: center;
 }
 
@@ -276,8 +276,6 @@ nav ul li{
     max-width: 100%;
     min-width: 100%;
     height: auto;
-    min-height: 181px;
-    max-height: 181px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -289,13 +287,30 @@ nav ul li{
     cursor: pointer;
     border-radius: 5px; 
     position: relative;
-    transition: transform 0.8s;
+    transition: all 0.8s;
     background: white;
+    opacity: 0;
     
 }
 
+.l-card::after{
+    content: '';
+    position: absolute;
+    background: var(--primary-color);
+    width: 100%;
+    height: 6px;
+    bottom: -4px;
+    left: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    visibility: hidden;
+}
 
 
+.l-card:hover{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
 
 .l-card:hover::after{
     visibility: visible;
@@ -377,6 +392,10 @@ nav ul li{
   
 }
 
+.l-card:hover{
+    transform: translateY(-10px);
+}
+
 .fas.fa-heart{
     color: rgb(224, 161, 161);
     font-size: 20px;
@@ -403,35 +422,19 @@ nav ul li{
 }
 
 
-.l-card:hover{
-    transform: translateY(-18px);
-    background: var(--primary-color);
-    color: white;
-}
 
-.l-card:hover .l-card-adress p{
-    text-shadow: 1px 1px rgb(0, 0, 0);
-}
 
-.l-card:hover .info > *{
-    color: rgb(241, 241, 241);
-    text-shadow: 1px 1px rgb(0, 0, 0);
-}
+
+
+
 
 .price-div{
     display: none;
 }
 
-.clickable-card{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: transparent;
-    z-index: 50;
-    border-radius: 5px;
-}
+
+
+
 
 
 
@@ -911,156 +914,7 @@ nav ul li{
 }
 
 
-/*PAGE 2--------------------------------------------------------------------------------------------------------------------*/
 
-.single-prop{
-    max-width: 80%;
-    margin: 0 auto;
-    margin-top: 100px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    
-}
-
-.single-prop-card{
-    flex-basis: 50%;
-    min-width: 564px;
-    flex-grow: 0.65;
-    margin: 0 auto;
-   
-}
-
-.tour{
-    flex-basis: 45%;
-    flex-grow: 1;
-}
-
-.main-card-header{
-    height: 400px;
-    width: 100%;
-    position: relative;
-}
-
-.prop-desc{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 4;
-    color: white;
-    background: var(--primary-color);
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-    text-shadow: 1px 1px rgb(0, 0, 0);
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-}
-
-.main-card-bg{
-    width: 100%;
-    max-width: 100%;
-    min-width: 100%;
-    height: auto;
-    max-height:100%;
-    min-height:100%;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-   
-}
-
-
-
-.sp-imgs{
-    position: relative;
-    min-width: 100%;
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px;
-    padding-right: 40px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-   column-gap: 8px;
-   
-
-
-}
-
-.sp-imgs2{
-    padding: 10px;
-    padding-left: 40px;
-}
-
-.fa-chevron-right{
-    position: absolute;
-    top: 50%;
-    right: 7px;
-    transform: translateY(-50%);
-    font-size: 22px;
-    background: var(--primary-color);
-    padding: 3px 4px;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-
-}
-
-.fa-chevron-left{
-    position: absolute;
-    top: 50%;
-    left: 7px;
-    transform: translateY(-50%);
-    font-size: 22px;
-    background: var(--primary-color);
-    padding: 4px 5px;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-    
-
-
-
-.sp-container{
-    overflow: auto;
-}
-
-
-.frame{
-    display: flex;
-    align-items: center;
-   transition: 1s;
- 
-}
-
-.sp-imgs img{
-    width: 100%;
-    min-width: 100%;
-    max-width: 100%;
-    height: auto;
-    max-height: 100px;
-    min-height: 100px;
-    cursor: pointer;
-    transition: 0.6s;
-    border-radius: 4px;
-}
-
-.sp-imgs img:hover{
-    transform: scale(1.08);
-}
-
-.single-prop-card{
-    box-shadow: 0px 0px 5px 0px rgb(0, 0, 0, 0.3);
-    border-radius: 10px;
-    max-width: 100%;
-    height: auto;
-}
-
-.tour{
-    border: 4px solid red;
-}
 
 @media(max-width: 1024px){
     .header-content{
@@ -1133,7 +987,10 @@ nav ul li{
 }
  
 
-   
+.local-listings-grid{
+    max-width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+}
     
     
 }
@@ -1154,16 +1011,12 @@ nav ul li{
         color: rgb(117, 117, 117);
     }
 
-    .local-listings-grid{
-        width: 90%;
-    }
+    
 
     
    
 
-    .l-card{
-        max-width: 273px;
-    }
+
 
    
 
@@ -1191,7 +1044,7 @@ nav ul li{
 
 
 
-    .mi-card img, .l-card-img img{
+    .mi-card img{
         min-height: 180px;
         max-height: 180px;
         min-width: 100%;
@@ -1208,10 +1061,7 @@ nav ul li{
         row-gap: 25px;
     }
 
-    .l-card{
-        width: 248px;
-        
-    }
+    
 
     .l-card-content{
         padding: 0;
@@ -1223,6 +1073,11 @@ nav ul li{
 
     .l-card .l-card-info{
         display: none;
+    }
+
+    .local-listings-grid{
+        max-width: 90%;
+       grid-template-columns: 1fr 1fr;
     }
 
     .price-div{
@@ -1241,10 +1096,6 @@ nav ul li{
        text-shadow: 1px 1px rgb(0, 0, 0);
     }
 
-
-.local-listings-grid{
-    grid-template-columns: repeat(auto-fit, 248px); 
-}
 
 .mi-option{
     width: 80%;
@@ -1325,6 +1176,11 @@ nav ul li{
     .header-content h1{
         font-size: 30px;
      }
+
+     .local-listings-grid{
+        max-width: 85%;
+       grid-template-columns: 1fr;
+    }
  
      .header-content p{
          font-size: 14px;
