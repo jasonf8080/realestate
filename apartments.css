@@ -674,6 +674,12 @@ nav ul li{
 }
 
 @media(max-width: 900px){
+
+    .more-info-flex{
+        max-width: 100%;
+        background: white;
+    }
+
     .mi-item, .mi-item.reverse{
         flex-direction: column;
         margin-bottom: 20px;
