@@ -289,7 +289,7 @@ nav ul li{
     cursor: pointer;
     border-radius: 5px; 
     position: relative;
-    transition: transform 0.8s, background 0.1s, color 0.1s;
+    transition: transform 0.8s, background 0.1s, color 0.1s, opacity 0.8s;
     background: white;
     opacity: 0;
     

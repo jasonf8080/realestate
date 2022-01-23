@@ -50,7 +50,6 @@ fetch('houseInfo.json')
 
       //lazy load of houseCards
         const houseCards = document.querySelectorAll('.l-card');
-        console.log(houseCards);
 
         let options = {
             threshold: 0.4,
@@ -74,10 +73,11 @@ fetch('houseInfo.json')
 
 
 
-        //select a house
+        //select a house  ln 83
         selectHouse(houseCards);
     
 })
+
 
 
 

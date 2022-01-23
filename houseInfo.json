@@ -1,86 +1,86 @@
 [
     {
-        "img": "images/house1.png",
+        "img": "https://cdn2.paintzen.com/wp-content/uploads/2020/06/AdobeStock_118597195.jpg",
         "address": "18 Chestnut St, Yorktown Heights, NY, 12483",
         "price": "$508,000",
-        "imgArray": ["images/house1.png", "https://kitchensunlimited.net/wp-content/uploads/2019/02/KitchenUnlimited-GlendaRoad-2-SelaviePhoto-A-2.jpg", "https://www.thespruce.com/thmb/c4b01hm8XRTMPYdQi1lu8Nd-8s0=/2500x1667/filters:fill(auto,1)/brophyinteriorsbedroom4-b262a7064d0c4c14b8ae8f2ae55df805.jpeg", "https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2020/3/31/0/HUHH2020-Kitchens_Arroyo-Grande-CA_9.jpg.rend.hgtvcom.966.644.suffix/1585683238993.jpeg"]
+        "imgArray": ["https://cdn2.paintzen.com/wp-content/uploads/2020/06/AdobeStock_118597195.jpg", "images/livingroom1.jpg", "images/kitchen1.jpg", "images/bedroom1.jpg"]
     },
 
     {
         "img": "images/house2.png",
         "address": "453 Morningside Ave, New Rochelle, NY, 12483",
         "price": "$600,000",
-        "imgArray": ["images/house2.png", "https://st.hzcdn.com/simgs/pictures/kitchens/small-and-efficient-kitchen-remodel-mosaic-design-build-img~29a1f83a0017f20e_9-0725-1-11fd626.jpg", "https://furnitureurban.com/wp-content/uploads/2020/04/CMEB6918-scaled.jpg", "https://kitchenandbathshop.com/wp-content/uploads/2021/02/bathroom-remodel-5000-1024x682.jpg"]
+        "imgArray": ["images/house2.png", "images/livingroom2.jpg", "images/kitchen2.jpg", "images/bedroom2.jpg"]
     },
 
     {
         "img": "images/house3.png",
         "address": "32 Soundview St, Dobbs Ferry, NY, 12483",
         "price": "$630,000",
-        "imgArray": ["images/house3.png", "https://st.hzcdn.com/simgs/pictures/kitchens/small-and-efficient-kitchen-remodel-mosaic-design-build-img~29a1f83a0017f20e_9-0725-1-11fd626.jpg", "https://furnitureurban.com/wp-content/uploads/2020/04/CMEB6918-scaled.jpg", "https://kitchenandbathshop.com/wp-content/uploads/2021/02/bathroom-remodel-5000-1024x682.jpg"]
+        "imgArray": ["images/house3.png", "images/livingroom3.jpg", "images/kitchen3.jpg", "images/bedroom3.jpg"]
     },
 
     {
         "img": "images/house4.png",
         "address": "672 Clinton St, Mt. Kisco, NY, 12483",
         "price": "$435,000",
-        "imgArray": ["images/house4.png", "https://st.hzcdn.com/simgs/pictures/kitchens/small-and-efficient-kitchen-remodel-mosaic-design-build-img~29a1f83a0017f20e_9-0725-1-11fd626.jpg", "https://furnitureurban.com/wp-content/uploads/2020/04/CMEB6918-scaled.jpg", "https://kitchenandbathshop.com/wp-content/uploads/2021/02/bathroom-remodel-5000-1024x682.jpg"]
+        "imgArray": ["images/house4.png", "images/livingroom4.jpg", "images/kitchen4.jpg", "images/bedroom4.jpg"]
     },
 
     {
         "img": "images/house5.png",
         "address": "843 Clearview St, Yonkers, NY, 12483",
         "price": "$810,000",
-        "imgArray": ["images/house5.png", "https://st.hzcdn.com/simgs/pictures/kitchens/small-and-efficient-kitchen-remodel-mosaic-design-build-img~29a1f83a0017f20e_9-0725-1-11fd626.jpg", "https://furnitureurban.com/wp-content/uploads/2020/04/CMEB6918-scaled.jpg", "https://kitchenandbathshop.com/wp-content/uploads/2021/02/bathroom-remodel-5000-1024x682.jpg"]
+        "imgArray": ["images/house5.png", "images/livingroom5.jpg", "images/kitchen5.jpg", "images/bedroom5.jpg"]
     },
 
     {
         "img": "images/house6.png",
         "address": "57 Jackson St, Elmsford, NY, 12483",
         "price": "$487,000",
-        "imgArray": ["images/house6.png", "https://st.hzcdn.com/simgs/pictures/kitchens/small-and-efficient-kitchen-remodel-mosaic-design-build-img~29a1f83a0017f20e_9-0725-1-11fd626.jpg", "https://furnitureurban.com/wp-content/uploads/2020/04/CMEB6918-scaled.jpg", "https://kitchenandbathshop.com/wp-content/uploads/2021/02/bathroom-remodel-5000-1024x682.jpg"]
+        "imgArray": ["images/house6.png", "images/livingroom6.jpg", "images/kitchen6.jpg", "images/bedroom6.jpg"]
     },
 
     {
         "img": "images/house7.png",
         "address": "981 Maple Ave, Hawthorne, NY, 12483",
         "price": "$523,000",
-        "imgArray": ["images/house7.png", "https://st.hzcdn.com/simgs/pictures/kitchens/small-and-efficient-kitchen-remodel-mosaic-design-build-img~29a1f83a0017f20e_9-0725-1-11fd626.jpg", "https://furnitureurban.com/wp-content/uploads/2020/04/CMEB6918-scaled.jpg", "https://kitchenandbathshop.com/wp-content/uploads/2021/02/bathroom-remodel-5000-1024x682.jpg"]
+        "imgArray": ["images/house7.png", "images/livingroom7.jpg", "images/kitchen7.jpg", "images/bedroom7.jpg"]
     },
 
     {
         "img": "images/house8.png",
         "address": "47 Sterling St, Somers, NY 12483",
         "price": "$732,000",
-        "imgArray": ["images/house8.png", "https://st.hzcdn.com/simgs/pictures/kitchens/small-and-efficient-kitchen-remodel-mosaic-design-build-img~29a1f83a0017f20e_9-0725-1-11fd626.jpg", "https://furnitureurban.com/wp-content/uploads/2020/04/CMEB6918-scaled.jpg", "https://kitchenandbathshop.com/wp-content/uploads/2021/02/bathroom-remodel-5000-1024x682.jpg"]
+        "imgArray": ["images/house8.png", "images/livingroom8.jpg", "images/kitchen8.jpg", "images/bedroom8.jpg"]
     },
 
     {
         "img": "images/house9.png",
         "address": "64 Madison Rd, Peekskill, NY, 12093",
         "price": "$450,000",
-        "imgArray": ["images/house9.png", "https://st.hzcdn.com/simgs/pictures/kitchens/small-and-efficient-kitchen-remodel-mosaic-design-build-img~29a1f83a0017f20e_9-0725-1-11fd626.jpg", "https://furnitureurban.com/wp-content/uploads/2020/04/CMEB6918-scaled.jpg", "https://kitchenandbathshop.com/wp-content/uploads/2021/02/bathroom-remodel-5000-1024x682.jpg"]
+        "imgArray": ["images/house9.png", "images/livingroom9.jpg", "images/kitchen9.jpg", "images/bedroom9.jpg"]
     },
 
     {
         "img": "images/house10.png",
         "address": "843 Columbus Ave, Tarrytown, NY, 12483",
         "price": "$560,000",
-        "imgArray": ["images/house10.png", "https://st.hzcdn.com/simgs/pictures/kitchens/small-and-efficient-kitchen-remodel-mosaic-design-build-img~29a1f83a0017f20e_9-0725-1-11fd626.jpg", "https://furnitureurban.com/wp-content/uploads/2020/04/CMEB6918-scaled.jpg", "https://kitchenandbathshop.com/wp-content/uploads/2021/02/bathroom-remodel-5000-1024x682.jpg"]
+        "imgArray": ["images/house10.png", "images/livingroom10.jpg", "images/kitchen10.jpg", "images/bedroom10.jpg"]
     },
 
     {
         "img": "images/house11.png",
         "address": "12 Lincoln St, Briarcliff, NY, 12483",
         "price": "$942,000",
-        "imgArray": ["images/house11.png", "https://st.hzcdn.com/simgs/pictures/kitchens/small-and-efficient-kitchen-remodel-mosaic-design-build-img~29a1f83a0017f20e_9-0725-1-11fd626.jpg", "https://furnitureurban.com/wp-content/uploads/2020/04/CMEB6918-scaled.jpg", "https://kitchenandbathshop.com/wp-content/uploads/2021/02/bathroom-remodel-5000-1024x682.jpg"]
+        "imgArray": ["images/house11.png", "images/livingroom11.jpg", "images/kitchen11.jpg", "images/bedroom11.jpg"]
     },
 
     {
         "img": "images/house12.png",
         "address": "129 Ardsley Rd, Ardsley, NY, 12483",
         "price": "$790,000",
-        "imgArray": ["images/house12.png", "https://st.hzcdn.com/simgs/pictures/kitchens/small-and-efficient-kitchen-remodel-mosaic-design-build-img~29a1f83a0017f20e_9-0725-1-11fd626.jpg", "https://furnitureurban.com/wp-content/uploads/2020/04/CMEB6918-scaled.jpg", "https://kitchenandbathshop.com/wp-content/uploads/2021/02/bathroom-remodel-5000-1024x682.jpg"]
+        "imgArray": ["images/house12.png", "images/livingroom12.jpg", "images/kitchen12.jpg", "images/bedroom12.jpg"]
     }
 ]
 
