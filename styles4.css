@@ -38,12 +38,12 @@
   /*selected house section*/
   
   .selected-house-section{
-      max-width: 90%;
+      max-width: 100%;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      margin-top: 2.5rem;
-      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+      grid-template-columns: 1.3fr 1fr;
+     padding: 10px 5px;
+      
    
   }
 
@@ -51,13 +51,24 @@
     position: relative;
   }
 
-  .selected-house-container i{
+  .lni.lni-chevron-left{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+    transform: translateY(-50%);
+  }
+
+  .lni.lni-chevron-right{
     position: absolute;
     top: 50%;
     right: 5%;
     font-size: 2.5rem;
     color: white;
     cursor: pointer;
+    transform: translateY(-50%);
   }
 
   .selected-house{
@@ -65,11 +76,18 @@
       min-width: 100%;
       height: auto;
       display: block;
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
   }
 
-  .l-card{
-      opacity: 1;
+  .address-info{
+    padding: 20px;
   }
+
+  .address{
+    margin-bottom: 12px;
+  }
+
+
 
 
   @media(max-width: 768px){

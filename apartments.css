@@ -181,7 +181,7 @@ nav ul li{
 }
 
 .header-content h1{
-    font-size: 60px;
+    font-size: 40px;
     font-weight: lighter;
     color: white;
     text-shadow: 3px 3px rgb(0, 0, 0);
@@ -289,34 +289,16 @@ nav ul li{
     cursor: pointer;
     border-radius: 5px; 
     position: relative;
-    transition: all 0.8s;
+    transition: transform 0.8s, background 0.1s, color 0.1s;
     background: white;
     opacity: 0;
     
 }
 
-.l-card::after{
-    content: '';
-    position: absolute;
-    background: var(--primary-color);
-    width: 100%;
-    height: 6px;
-    bottom: -4px;
-    left: 0;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    visibility: hidden;
-}
 
 
-.l-card:hover{
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-}
 
-.l-card:hover::after{
-    visibility: visible;
-}
+
 
 .l-card-content{
     padding: 20px;
@@ -344,9 +326,7 @@ nav ul li{
     font-size: 12px;
 }
 
-.info i, .info p{
-    color: #113347;
-}
+
 
 .l-card h3{
     text-align: center;
@@ -398,6 +378,11 @@ nav ul li{
     transform: translateY(-10px);
 }
 
+.l-card:hover{
+    background: var(--primary-color);
+    color: white;
+}
+
 .fas.fa-heart{
     color: rgb(224, 161, 161);
     font-size: 20px;
@@ -446,14 +431,10 @@ nav ul li{
 }
 
 
-@media(max-width: 840px){
+@media(max-width: 950px){
     .local-listings-grid{
         grid-template-columns: repeat(2, 1fr);
         max-width: 90%;
-    }
-
-    .l-card{
-        box-shadow: none;
     }
 
     .l-card:hover .l-card-img::after{
@@ -474,7 +455,7 @@ nav ul li{
     
     .local-listings-grid{
         grid-template-columns: 1fr;
-        max-width: 100%;
+        max-width: 95%;
     }
 
 }
@@ -543,10 +524,20 @@ nav ul li{
 .mi-info a{
     padding: 10px 29px;
     text-decoration: none;
+    text-transform: uppercase;
     background-color: var(--primary-color);
     color: white;
     border-radius: 8px;
+    border: 2px solid var(--primary-color);
     text-shadow: 1px 1px rgb(0, 0, 0);
+}
+
+.mi-info a:hover{
+    border: 2px solid var(--primary-color);
+    background-color: white;
+    color: var(--primary-color);
+    transition: 0.3s;
+    text-shadow: none;
 }
 
 .mobile-price{
@@ -591,6 +582,7 @@ nav ul li{
 .footer{
     background: var(--primary-color);
     padding: 50px 0;
+    color: white;
 }
 
 .footer-grid{
@@ -604,16 +596,13 @@ nav ul li{
  
 }
 
-.footer-grid *{
-    text-shadow: 1px 1px rgb(0, 0, 0);
-}
+
 
 
 .c-title{
     text-align: center;
     margin-bottom: 18px;
-    color: white;
-    font-size: 30px;
+    font-size: 25px;
     text-transform: uppercase;
 }
 
@@ -630,8 +619,6 @@ nav ul li{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--primary-color);
-    background:var(--primary-color);
     padding: 15px 0;
    flex-basis: 15%;
    border-top-left-radius: 8px;
@@ -644,18 +631,16 @@ nav ul li{
 
 .contact-card .icon-c i{
     font-size: 24px;
-    color: white;
+  
 }
 
 .contact-card{
-    color: white;
+   
     cursor: pointer;
     transition: transform 0.5s;
 }
 
-.contact-card-info p{
-    color: white;
-}
+
 
 .contact-card:hover{
    transform: scale(1.05);
@@ -681,6 +666,7 @@ nav ul li{
 
 .ql li, .follow-ul li{
     list-style: none;
+    
 }
 
 .ql li{
@@ -694,9 +680,6 @@ nav ul li{
     font-weight: bold;
 }
 
-.ql a:hover{
-    color:rgb(233, 233, 233);
-}
 
 
 .follow-us{
@@ -715,26 +698,23 @@ nav ul li{
 }
 
 .follow-ul i{
-    color: rgb(255, 255, 255);
+   color: white;
     font-size: 32px;
 }
 
-.follow-ul i:hover{
-    color: rgb(233, 233, 233);
-}
+
 
 
 
 .footnote{
     height: 10vh;
-    background: var(--primary-color);
     text-transform: uppercase;
+    background: var(--primary-color);
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 2px solid rgb(219, 108, 108);
-    text-shadow: 1px 1px rgb(0, 0, 0);
+    border-top: 2px solid rgb(219, 104, 104);
 
 }
 
@@ -848,7 +828,7 @@ nav ul li{
     }
 
     .header-content h1{
-       font-size: 38px;
+       font-size: 35px;
     }
 
     .header-content p{
@@ -978,7 +958,7 @@ nav ul li{
     }
 
     .header-content h1{
-        font-size: 30px;
+        font-size: 25px;
      }
 
  
