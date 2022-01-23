@@ -449,18 +449,23 @@ nav ul li{
 @media(max-width: 840px){
     .local-listings-grid{
         grid-template-columns: repeat(2, 1fr);
+        max-width: 90%;
+    }
+
+    .l-card{
+        box-shadow: none;
     }
 
     .l-card:hover .l-card-img::after{
         opacity: 0;
     }
 
-    .l-card:hover::after{
+    .l-card:hover::after, .l-card:hover .l-card-img h3{
         visibility: hidden;
     }
 
-    .l-card:hover .l-card-img h3{
-        visibility: hidden;
+    .l-card:hover{
+        transform: translateY(0px);
     }
 }
 
@@ -468,8 +473,8 @@ nav ul li{
 @media(max-width: 660px){
     
     .local-listings-grid{
-        max-width: 85%;
         grid-template-columns: 1fr;
+        max-width: 100%;
     }
 
 }
