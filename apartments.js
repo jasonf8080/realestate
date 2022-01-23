@@ -89,6 +89,9 @@ let housesHTML = houses.map(function(house){
             <p>${house.address}</p>
         </div>
 
+        <p class="mobile-price">${house.price}</p>
+
+
 
 
     <div class="l-card-info">
