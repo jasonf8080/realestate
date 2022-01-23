@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 
 :root{
@@ -9,7 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -321,7 +323,7 @@ nav ul li{
 }
 
 .l-card-adress p{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -436,35 +438,31 @@ nav ul li{
 
 
 
-
-
-.view-more{
-    text-align: center;
-    margin: 50px 0;
-}
-
-.view-more-btn{
-    padding: 8px 54px;
-    font-size: 20px;
-    text-decoration: none;
-    background-color: var(--primary-color);
-    color: white;
-    border-radius: 8px;
-    border: 3px solid var(--primary-color);
-    text-transform: uppercase;
-    text-shadow: 1px 1px rgb(0, 0, 0);
+@media(max-width: 1295px){
+    .local-listings-grid{
+        max-width: 90%;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 
-
-.view-more-btn:hover{
-        border: 3px solid var(--primary-color);
-        background-color: white;
-        color: var(--primary-color);
-        transition: 0.3s;
-        text-shadow: none;
- 
+@media(max-width: 840px){
+    .local-listings-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
+
+
+@media(max-width: 660px){
+    
+    .local-listings-grid{
+        max-width: 85%;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
 
 
 /*more info*/
@@ -650,6 +648,7 @@ nav ul li{
 .mi-item h1{
     text-transform: uppercase;
     font-size: 25px;
+    margin-bottom: 10px;
 }
 
 
@@ -923,10 +922,7 @@ nav ul li{
 }
  
 
-.local-listings-grid{
-    max-width: 90%;
-    grid-template-columns: repeat(3, 1fr);
-}
+
     
     
 }
@@ -997,24 +993,9 @@ nav ul li{
         row-gap: 25px;
     }
 
-    
 
-    .l-card-content{
-        padding: 0;
-    }
 
-    .l-card-adress{
-        padding: 20px;
-    }
 
-    .l-card .l-card-info{
-        display: none;
-    }
-
-    .local-listings-grid{
-        max-width: 90%;
-       grid-template-columns: 1fr 1fr;
-    }
 
     .price-div{
         display: flex;
@@ -1113,10 +1094,6 @@ nav ul li{
         font-size: 30px;
      }
 
-     .local-listings-grid{
-        max-width: 85%;
-       grid-template-columns: 1fr;
-    }
  
      .header-content p{
          font-size: 14px;
